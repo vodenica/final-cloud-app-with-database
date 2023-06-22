@@ -24,18 +24,18 @@ $: python manage.py runserver
    * A social media platform.
    * A video game.
 2) What is the purpose of Hyperledger FireFly?
-   a) To build and scale secure Web3 applications.
-   b) To build and scale secure Web2 applications.
-   c) To build and scale secure Web1 applications.
+   * To build and scale secure Web3 applications.
+   * To build and scale secure Web2 applications.
+   * To build and scale secure Web1 applications.
 3) What is the Hyperledger FireFly SuperNode?
-   a) A new type of decentralized orchestration layer between companies’ existing systems and Web3.
-   b) A new type of centralized orchestration layer between companies’ existing systems and Web3.
-   c) A new type of decentralized orchestration layer between companies’ existing systems and Web2.
+   * A new type of decentralized orchestration layer between companies’ existing systems and Web3.
+   * A new type of centralized orchestration layer between companies’ existing systems and Web3.
+   * A new type of decentralized orchestration layer between companies’ existing systems and Web2.
 5) What does the FireFly API provide?
-   a) Digital assets, data flows, and blockchain transactions.
-   b) Digital assets, data flows, and blockchain transactions for Web2 applications.
-   c) Digital assets, data flows, and blockchain transactions for Web1 applications.
+   * Digital assets, data flows, and blockchain transactions.
+   * Digital assets, data flows, and blockchain transactions for Web2 applications.
+   * Digital assets, data flows, and blockchain transactions for Web1 applications.
 7) What problem does Hyperledger FireFly solve?
-   a) The layers of complexity that sit between the low-level blockchain and high-level business processes and user interfaces.
-   b) The layers of complexity that sit between the low-level blockchain and high-level business processes only.
-   c) The layers of complexity that sit between the low-level blockchain and user interfaces only.
+   * The layers of complexity that sit between the low-level blockchain and high-level business processes and user interfaces.
+   * The layers of complexity that sit between the low-level blockchain and high-level business processes only.
+   * The layers of complexity that sit between the low-level blockchain and user interfaces only.
