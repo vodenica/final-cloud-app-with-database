@@ -20,13 +20,22 @@ $: python manage.py runserver
 ```
 ## Questions for Hyperledger FireFly
 1) What is Hyperledger FireFly?
-   > a) A blockchain platform
-   > b) A social media platform
-   > c) A video game
+   a) A blockchain platform.
+   b) A social media platform.
+   c) A video game.
 2) What is the purpose of Hyperledger FireFly?
-   a) To build and scale secure Web3 applications
-   b) To build and scale secure Web2 applications
-   c) To build and scale secure Web1 applications
-3) What is the Hyperledger FireFly SuperNode? a) A new type of decentralized orchestration layer between companies’ existing systems and Web3 b) A new type of centralized orchestration layer between companies’ existing systems and Web3 c) A new type of decentralized orchestration layer between companies’ existing systems and Web2
-4) What does the FireFly API provide? a) Digital assets, data flows, and blockchain transactions b) Digital assets, data flows, and blockchain transactions for Web2 applications c) Digital assets, data flows, and blockchain transactions for Web1 applications
-5) What problem does Hyperledger FireFly solve? a) The layers of complexity that sit between the low-level blockchain and high-level business processes and user interfaces b) The layers of complexity that sit between the low-level blockchain and high-level business processes only c) The layers of complexity that sit between the low-level blockchain and user interfaces only.
+   a) To build and scale secure Web3 applications.
+   b) To build and scale secure Web2 applications.
+   c) To build and scale secure Web1 applications.
+3) What is the Hyperledger FireFly SuperNode?
+   a) A new type of decentralized orchestration layer between companies’ existing systems and Web3.
+   b) A new type of centralized orchestration layer between companies’ existing systems and Web3.
+   c) A new type of decentralized orchestration layer between companies’ existing systems and Web2.
+5) What does the FireFly API provide?
+   a) Digital assets, data flows, and blockchain transactions.
+   b) Digital assets, data flows, and blockchain transactions for Web2 applications.
+   c) Digital assets, data flows, and blockchain transactions for Web1 applications.
+7) What problem does Hyperledger FireFly solve?
+   a) The layers of complexity that sit between the low-level blockchain and high-level business processes and user interfaces.
+   b) The layers of complexity that sit between the low-level blockchain and high-level business processes only.
+   c) The layers of complexity that sit between the low-level blockchain and user interfaces only.
