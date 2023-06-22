@@ -1,7 +1,7 @@
 
 **General Notes**
 
-An `onlinecourse` app has already been provided in this repo upon which you will be adding a new assesement feature.
+An `onlinecourse` app has already been provided in this repo upon which you will be adding a new assessment feature.
 
 - If you want to develop the final project on Theia hosted by [IBM Developer Skills Network](https://labs.cognitiveclass.ai/), you will need to create the same project structure on Theia workspace and save it everytime you close the browser
 - Or you could develop the final project locally by setting up your own Python runtime and IDE
@@ -13,3 +13,8 @@ An `onlinecourse` app has already been provided in this repo upon which you will
 For your reference, we have prepared the ER diagram design for the new assesement feature.
 
 ![Onlinecourse ER Diagram](https://github.com/ibm-developer-skills-network/final-cloud-app-with-database/blob/master/static/media/course_images/onlinecourse_app_er.png)
+
+To run, please just run the server:
+```
+$: python manage.py runserver
+```

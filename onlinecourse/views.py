@@ -180,7 +180,7 @@ def show_exam_result(request, course_id, lesson_id, submission_id):
     
     total_score = round((score/count)*100, 2)
 
-    # Pass the context with the concerened lesson along with other parameters - 
+    # Pass the context with the concerned lesson along with other parameters - 
     # This helps in displaying the content related to the lesson only
     context = {
         "course" : course,

@@ -49,7 +49,7 @@ class Learner(models.Model):
 
     def __str__(self):
         return self.user.username + "," + \
-               self.occupation
+            self.occupation
 
 
 # Course model
@@ -59,7 +59,8 @@ class Course(models.Model):
     description = models.CharField(max_length=1000)
     pub_date = models.DateField(null=True)
     instructors = models.ManyToManyField(Instructor)
-    users = models.ManyToManyField(settings.AUTH_USER_MODEL, through='Enrollment')
+    users = models.ManyToManyField(
+        settings.AUTH_USER_MODEL, through='Enrollment')
     total_enrollment = models.IntegerField(default=0)
     is_enrolled = False
 
@@ -88,7 +89,8 @@ class Enrollment(models.Model):
         (HONOR, 'Honor'),
         (BETA, 'BETA')
     ]
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL,
+                             on_delete=models.CASCADE)
     course = models.ForeignKey(Course, on_delete=models.CASCADE)
     date_enrolled = models.DateField(default=now)
     mode = models.CharField(max_length=5, choices=COURSE_MODES, default=AUDIT)
@@ -101,7 +103,7 @@ class Enrollment(models.Model):
     # Has a grade point for each question
     # Has question content
     # Other fields and methods you would like to design
-#class Question(models.Model):
+# class Question(models.Model):
     # Foreign key to lesson
     # question text
     # question grade/mark
@@ -109,22 +111,27 @@ class Enrollment(models.Model):
 class Question(models.Model):
     content = models.CharField(max_length=200, null=False)
     mark = models.IntegerField(null=False, default=1)
-    
+
     lesson = models.ForeignKey(Lesson, on_delete=models.CASCADE)
+    
 
     def __str__(self):
         return f"Question : {self.content}"
-
+    objects = models.Manager()
+    
 
     # <HINT> A sample model method to calculate if learner get the score of the question
+
     def is_get_score(self, selected_ids):
-       all_answers = self.choice_set.filter(is_correct=True).count()
-       selected_correct = self.choice_set.filter(is_correct=True, id__in=selected_ids).count()
-       selected_incorrect = self.choice_set.filter(is_correct=False, id__in=selected_ids).count()
-       if all_answers == (selected_correct - selected_incorrect):
-           return True
-       else:
-           return False
+        all_answers = self.choice_set.filter(is_correct=True).count()
+        selected_correct = self.choice_set.filter(
+            is_correct=True, id__in=selected_ids).count()
+        selected_incorrect = self.choice_set.filter(
+            is_correct=False, id__in=selected_ids).count()
+        if all_answers == (selected_correct - selected_incorrect):
+            return True
+        else:
+            return False
 
 
 #  <HINT> Create a Choice Model with:
@@ -134,15 +141,13 @@ class Question(models.Model):
     # Indicate if this choice of the question is a correct one or not
     # Other fields and methods you would like to design
 class Choice(models.Model):
-    #id = models.IntegerField(primary_key=True)
+    # id = models.IntegerField(primary_key=True)
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
     choice_text = models.CharField(max_length=200, null=False)
     is_correct = models.BooleanField(default=False)
 
     def __str__(self):
         return self.choice_text
-
-
 
 
 # <HINT> The submission model
@@ -153,6 +158,6 @@ class Submission(models.Model):
     enrollment = models.ForeignKey(Enrollment, on_delete=models.CASCADE)
     choices = models.ManyToManyField(Choice)
 #    Other fields and methods you would like to design
+
     def __str__(self):
         return f"submission:{self.pk}"
-        

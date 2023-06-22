@@ -18,7 +18,13 @@ urlpatterns = [
     path('<int:course_id>/enroll/', views.enroll, name='enroll'),
 
     # <HINT> Create a route for submit view
+    # Retrieved both lesson id and course id from exam form and passed in url params
+    path('<int:course_id>/<int:lesson_id>/submit/', views.submit, name='submit'),
 
     # <HINT> Create a route for show_exam_result view
+    # Passed the lesson id in url to retrieve the particular lesson in question
+    # Useful especially when some or all questions go unanswered
+    path('course/<int:course_id>/lesson/<int:lesson_id>/submission/<int:submission_id>/result/', \
+        views.show_exam_result, name='exam_result'),
 
  ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
