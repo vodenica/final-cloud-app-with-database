@@ -20,9 +20,9 @@ $: python manage.py runserver
 ```
 ## Questions for Hyperledger FireFly
 1) What is Hyperledger FireFly?
-   a) A blockchain platform.
-   b) A social media platform.
-   c) A video game.
+   * A blockchain platform.
+   * A social media platform.
+   * A video game.
 2) What is the purpose of Hyperledger FireFly?
    a) To build and scale secure Web3 applications.
    b) To build and scale secure Web2 applications.
